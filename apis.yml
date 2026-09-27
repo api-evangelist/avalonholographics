@@ -1,23 +1,61 @@
 aid: avalonholographics
+
 name: Avalonholographics
-description: 'Avalonholographics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Avalonholographics is a technology company that focuses on holographic display solutions and related services. It was initially added to the API Evangelist network as a stub from secondary-market harvesting, and is slated for full profiling in the pipeline. The company aims to provide advanced holographic imaging for various applications, though detailed public information is currently limited.'
+
 url: https://raw.githubusercontent.com/api-evangelist/avalonholographics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
+- holography
+- display
+- imaging
+- technology
+- startup
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/avalonholographics-hosts.yml
+- type: Vendors
+  url: vendors/avalonholographics-vendors.yml
+- type: DomainSecurity
+  url: security/avalonholographics-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/avalonholographics
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The company website returns a JavaScript shell and cannot be rendered to extract API information.
+  evidence:
+    - url: http://www.avalonholographics.com
+      status: 202
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
