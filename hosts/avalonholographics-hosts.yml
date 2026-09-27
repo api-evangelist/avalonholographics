@@ -13,9 +13,12 @@ hosts:
 - host: equityzen.com
   found_by:
   - pointer
+  - vendor-detect
   types:
   - Website
-  serves: []
+  serves:
+  - cdn
+  vendor: akamai
   registrable_domain: equityzen.com
   role: website
   relation: platform
